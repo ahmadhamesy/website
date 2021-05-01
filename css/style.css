@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+body
+{
+    font-family: 'Amiri', serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    direction: rtl;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #353637;
+    color: #ffffff ;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #32a0c2 4px solid;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+header li {
+    float: right;
+    display: inline;
+
+    padding: 0 20px 0 20px;
+}
+header #branding{
+    float: right;
+}
+header #branding h1{
+    margin: 0;
+}
+header nav{
+    float: left;
+    margin-top: 10px;
+
+}
+header .highlight,header .current a{
+    color: #32a0c2;
+    font-weight: bold;
+}
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+#showcase
+{
+    min-height: 400px;
+    background: url("../img/image.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+#showcase p{
+    font-size: 20px;
+}
+#newslatter{
+    padding: 15px;
+    color: white;
+    background: #353637;
+
+}
+#newslatter h1{
+    float: right;
+
+}
+#newslatter form{
+    float: left;
+    margin-top: 15px;
+}
+#newslatter input [type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+.button{
+    height: 38px;
+    background: #cccccc;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #353637;
+}
+#boxes{
+    margin-top: 20px;
+}
+#boxes .box
+{
+    float: right;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+
+}
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background:#32a0c2;
+    text-align: center;
+}
+@media(max-width:768px)
+{
+    header #branding,
+    header nav,
+    header nav li,
+    #newslatter h1,
+    #newslatter form,
+    #boxes.box
+    {
+        float: none;
+        text-align:center;
+        width: 100%;
+
+    }
+    header
+    {
+        padding: 20px;
+    }
+    #showcase h1
+    {
+        margin-top: 40px;
+    }
+    #newslatter button
+    {
+        display: block;
+        width: 100%;
+
+    }
+    #newslatter form input[type="email"]
+    {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
